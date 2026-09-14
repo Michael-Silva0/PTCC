@@ -1,0 +1,557 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+
+:root {
+  --conecta-light-blue: #ebf7ff;
+  --conecta-blue: #124582;
+  --conecta-purple: #5829a7;
+  --conecta-light-green: #adeec5;
+
+  --conecta-white: #ffffff;
+  --conecta-text: #273746;
+  --conecta-muted: #667788;
+  --conecta-border: #dce8f0;
+}
+
+/*
+ * Tema
+ */
+
+html {
+  scroll-behavior: smooth;
+
+  /* Evita que controles nativos adotem dark mode. */
+  color-scheme: light;
+}
+
+html,
+body {
+  background-color: var(--conecta-white);
+  color: var(--conecta-text);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*
+ * Logo
+ */
+
+.conecta-logo {
+  width: auto;
+  max-height: 4rem !important;
+}
+
+.navbar-brand .navbar-item {
+  padding-block: 0.75rem;
+}
+/*
+ * Bulma overrides
+ */
+
+.title {
+  color: var(--conecta-blue);
+}
+
+.subtitle {
+  color: var(--conecta-muted);
+}
+
+.content {
+  color: var(--conecta-text);
+}
+
+.content p {
+  color: inherit;
+}
+
+.has-text-primary {
+  color: var(--conecta-blue) !important;
+}
+
+.has-background-primary {
+  background-color: var(--conecta-blue) !important;
+}
+
+.has-background-light {
+  background-color: var(--conecta-light-blue) !important;
+}
+
+/*
+ * Botões
+ */
+
+.button.is-primary {
+  color: var(--conecta-white);
+  background-color: var(--conecta-blue);
+  border-color: transparent;
+}
+
+.button.is-primary:hover,
+.button.is-primary:focus {
+  color: var(--conecta-white);
+  background-color: #0e396d;
+}
+
+.button.is-primary.is-light {
+  color: var(--conecta-blue);
+  background-color: var(--conecta-light-blue);
+}
+
+.button.is-primary.is-light:hover,
+.button.is-primary.is-light:focus {
+  color: var(--conecta-white);
+  background-color: var(--conecta-blue);
+}
+
+/*
+ * Tags
+ */
+
+.tag.is-primary {
+  color: var(--conecta-white);
+  background-color: var(--conecta-blue);
+}
+
+.tag.is-primary.is-light {
+  color: var(--conecta-blue);
+  background-color: var(--conecta-light-blue);
+}
+
+/*
+ * Roxo
+ */
+
+.has-text-conecta-purple {
+  color: var(--conecta-purple) !important;
+}
+
+.has-background-conecta-purple {
+  background-color: var(--conecta-purple) !important;
+}
+
+.button.is-conecta-purple {
+  color: var(--conecta-white);
+  background-color: var(--conecta-purple);
+  border-color: transparent;
+}
+
+.button.is-conecta-purple:hover,
+.button.is-conecta-purple:focus {
+  color: var(--conecta-white);
+  background-color: #472087;
+}
+
+.tag.is-conecta-purple {
+  color: var(--conecta-purple);
+  background-color: #f0e9fb;
+}
+
+/*
+ * Verde
+ */
+
+.has-text-conecta-green {
+  color: #245c39 !important;
+}
+
+.has-background-conecta-green {
+  background-color: var(--conecta-light-green) !important;
+}
+
+.tag.is-conecta-green {
+  color: #245c39;
+  background-color: var(--conecta-light-green);
+}
+
+/*
+ * Navbar
+ */
+
+.navbar {
+  background-color: var(--conecta-white);
+  border-bottom: 1px solid var(--conecta-border);
+}
+
+.navbar-menu {
+  background-color: var(--conecta-white);
+}
+
+.navbar-item {
+  color: var(--conecta-text);
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  color: var(--conecta-blue) !important;
+  background-color: var(--conecta-light-blue) !important;
+}
+
+/*
+ * Hero
+ */
+
+.conecta-hero {
+  background:
+    radial-gradient(
+      circle at 88% 18%,
+      rgb(88 41 167 / 12%),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      var(--conecta-white) 0%,
+      var(--conecta-light-blue) 100%
+    );
+}
+
+.conecta-title {
+  max-width: 800px;
+
+  color: var(--conecta-blue);
+
+  letter-spacing: -0.04em;
+}
+
+.conecta-hero .subtitle {
+  color: var(--conecta-muted) !important;
+}
+
+/*
+ * Missão
+ */
+
+.conecta-mission {
+  padding: 2.5rem;
+
+  background: linear-gradient(
+    145deg,
+    var(--conecta-blue),
+    var(--conecta-purple)
+  );
+
+  border: none;
+  border-radius: 1.5rem;
+
+  box-shadow: 0 16px 40px rgb(18 69 130 / 15%);
+}
+
+.conecta-mission .title {
+  color: var(--conecta-white) !important;
+  line-height: 1.35;
+}
+
+.conecta-mission p {
+  color: var(--conecta-white);
+}
+
+.conecta-mission .has-text-grey-light {
+  color: var(--conecta-light-green) !important;
+}
+
+/* Texto em negrito */
+
+.content strong {
+  color: var(--conecta-blue);
+  font-weight: 700;
+}
+
+
+/*
+ * Quem somos
+ */
+
+.conecta-about {
+  background-color: var(--conecta-blue);
+}
+
+.conecta-about .title {
+  color: var(--conecta-white);
+}
+
+.conecta-about .content {
+  color: #e5eff7;
+}
+
+.conecta-about .content p {
+  color: #e5eff7;
+}
+
+.conecta-about .content strong {
+  color: var(--conecta-white);
+}
+
+.conecta-about .has-text-primary,
+.conecta-about .conecta-section-label {
+  color: var(--conecta-light-green) !important;
+}
+
+/* Texto em negrito sobre fundo azul */
+
+.conecta-about .content strong {
+  color: var(--conecta-white);
+}
+
+/*
+ * Seções claras
+ */
+
+.section.has-background-light {
+  background-color: var(--conecta-light-blue) !important;
+}
+
+.section.has-background-light .title {
+  color: var(--conecta-blue);
+}
+
+.section.has-background-light .content {
+  color: var(--conecta-text);
+}
+
+.section.has-background-light .content p {
+  color: var(--conecta-text);
+}
+
+/*
+ * História
+ */
+
+.conecta-quote {
+  height: 100%;
+
+  background-color: var(--conecta-white);
+
+  border: 1px solid var(--conecta-border);
+  border-radius: 1.25rem;
+
+  box-shadow: 0 6px 24px rgb(18 69 130 / 8%);
+}
+
+.conecta-quote .card-content {
+  background-color: transparent;
+}
+
+.conecta-quote .title,
+.conecta-quote blockquote {
+  color: var(--conecta-blue);
+}
+
+.conecta-quote p {
+  color: var(--conecta-muted);
+}
+
+/*
+ * Estatísticas
+ */
+
+.conecta-stats {
+  background: linear-gradient(
+    135deg,
+    #0e355f,
+    var(--conecta-blue)
+  );
+}
+
+.conecta-stats .title {
+  color: var(--conecta-white);
+}
+
+.conecta-stats .subtitle {
+  color: #dce9f3;
+}
+
+.conecta-stat-card {
+  height: 100%;
+
+  background-color: rgb(255 255 255 / 8%);
+
+  border: 1px solid rgb(255 255 255 / 14%);
+
+  box-shadow: none;
+
+  backdrop-filter: blur(8px);
+}
+
+.conecta-stat-card .title {
+  color: var(--conecta-light-green) !important;
+}
+
+.conecta-stat-card p {
+  color: #dce9f3 !important;
+}
+
+/*
+ * Propósito
+ */
+
+.conecta-value-card {
+  height: 100%;
+
+  background-color: var(--conecta-white);
+
+  border: 1px solid var(--conecta-border);
+  border-radius: 1rem;
+
+  box-shadow: 0 4px 18px rgb(18 69 130 / 6%);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.conecta-value-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgb(18 69 130 / 30%);
+
+  box-shadow: 0 12px 28px rgb(18 69 130 / 10%);
+}
+
+.conecta-value-card .title {
+  color: var(--conecta-blue);
+}
+
+.conecta-value-card p {
+  color: var(--conecta-text);
+}
+
+/*
+ * Produtos
+ */
+
+.conecta-product {
+  overflow: hidden;
+
+  background-color: var(--conecta-white);
+
+  border: 1px solid var(--conecta-border);
+  border-radius: 1.5rem;
+
+  box-shadow: 0 4px 20px rgb(18 69 130 / 7%);
+}
+
+.conecta-product .card-content {
+  background-color: transparent;
+}
+
+.conecta-product .title {
+  color: var(--conecta-blue);
+}
+
+.conecta-product .content,
+.conecta-product .content p {
+  color: var(--conecta-text);
+}
+
+.conecta-product-logo {
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    var(--conecta-light-blue),
+    #f1ebff
+  ) !important;
+
+  border-radius: 1.25rem;
+}
+
+/*
+ * Sala ETEC
+ */
+
+.conecta-product-logo .has-text-link {
+  color: var(--conecta-purple) !important;
+}
+
+/*
+ * Destaques
+ */
+
+.conecta-highlight {
+  color: var(--conecta-purple);
+}
+
+.conecta-highlight-box {
+  background-color: var(--conecta-light-green);
+
+  border-radius: 1rem;
+}
+
+/*
+ * CTA
+ */
+
+.conecta-cta {
+  background: linear-gradient(
+    120deg,
+    var(--conecta-blue),
+    var(--conecta-purple)
+  );
+}
+
+.conecta-cta .title {
+  color: var(--conecta-white);
+}
+
+.conecta-cta .button.is-white {
+  color: var(--conecta-blue);
+  background-color: var(--conecta-white);
+}
+
+.conecta-cta .button.is-white:hover,
+.conecta-cta .button.is-white:focus {
+  color: var(--conecta-purple);
+  background-color: var(--conecta-light-blue);
+}
+
+/*
+ * Footer
+ */
+
+.conecta-footer {
+  background-color: #0b2848;
+}
+
+.conecta-footer .title {
+  color: var(--conecta-white);
+}
+
+.conecta-footer p {
+  color: #c9d9e6;
+}
+
+/*
+ * Links
+ */
+
+a:not(.button):not(.navbar-item) {
+  transition: color 150ms ease;
+}
+
+a:not(.button):not(.navbar-item):hover {
+  color: var(--conecta-purple);
+}
+
+/*
+ * Responsividade
+ */
+
+@media screen and (max-width: 768px) {
+  .conecta-mission {
+    padding: 1.75rem;
+  }
+
+  .conecta-product-logo {
+    min-height: 160px;
+  }
+
+  .conecta-title {
+    font-size: 2.5rem !important;
+  }
+}
