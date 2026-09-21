@@ -38,8 +38,12 @@ body {
  */
 
 .conecta-logo {
-  width: auto;
-  max-height: 4rem !important;
+  width: 100px;
+  max-height: 6rem !important;
+}
+
+.navbar-brand .navbar-item {
+  padding-block: 1rem;
 }
 
 .navbar-brand .navbar-item {
@@ -554,4 +558,59 @@ a:not(.button):not(.navbar-item):hover {
   .conecta-title {
     font-size: 2.5rem !important;
   }
+}
+/* footer dos links*/
+
+footer{
+background: linear-gradient(135deg, #0e355f, var(--conecta-blue));
+}
+footer .container{
+    display: flex;
+    color: white;
+
+    text-align: center;
+   
+}
+
+footer .container ul{
+    width: 100%;
+    
+ 
+}
+
+footer .container h3{
+    margin-bottom: 16px;
+    color: #ffffff;
+    
+    
+}
+
+footer .container .redes-sociais img{
+    margin-right: 5px;
+}
+
+footer .container ul>p{
+    margin-bottom: 40px;
+    color: lightgray;
+    
+}
+
+footer .container li{
+    margin: 10px 0;
+    list-style: none;
+    
+}
+
+footer .container a{
+    color: white;
+    text-decoration: none;
+ 
+}
+footer a:hover{
+    color: #22d3ee;
+
+}
+
+footer i{
+    color: #ebebeb;
 }

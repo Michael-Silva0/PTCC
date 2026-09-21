@@ -8,12 +8,19 @@
       name="description"
       content="Conheça a Conecta, empresa de tecnologia responsável pelo Sala ETEC e por soluções digitais voltadas à conexão entre pessoas, empresas e oportunidades."
     />
+
     <title>Sobre a Conecta</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar is-white has-shadow" role="navigation">
       <div class="container">
         <div class="navbar-brand">
@@ -51,6 +58,7 @@
     </nav>
 
     <main>
+      <!-- HERO -->
       <section class="hero is-medium conecta-hero" id="sobre">
         <div class="hero-body">
           <div class="container">
@@ -93,6 +101,12 @@
                     Desenvolver soluções digitais que facilitem o acesso à
                     informação e aproximem pessoas de novas oportunidades.
                   </p>
+
+                  <div class="mission-decoration">
+                    <span>●</span>
+                    <span>●</span>
+                    <span>●</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,10 +114,11 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- QUEM SOMOS -->
+      <section class="section conecta-about-section">
         <div class="container">
-          <div class="columns">
-            <div class="column is-8">
+          <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-6">
               <p class="has-text-primary has-text-weight-semibold mb-3">
                 QUEM SOMOS
               </p>
@@ -133,10 +148,26 @@
                 </p>
               </div>
             </div>
+
+            <!-- NOVA IMAGEM -->
+            <div class="column is-6">
+              <div class="conecta-image-card">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80"
+                  alt="Pessoas trabalhando juntas em uma empresa de tecnologia"
+                />
+
+                <div class="image-overlay">
+                  <span>CONEXÃO</span>
+                  <strong>Pessoas + Tecnologia + Oportunidades</strong>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- HISTÓRIA -->
       <section class="section has-background-light" id="historia">
         <div class="container">
           <div class="mb-6">
@@ -149,14 +180,23 @@
             </h2>
           </div>
 
-          <div class="columns is-variable is-8">
-            <div class="column is-7">
+          <div class="columns is-variable is-8 is-vcentered">
+            <div class="column is-6">
+              <div class="conecta-history-image">
+                <img
+                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80"
+                  alt="Equipe trabalhando em conjunto"
+                />
+              </div>
+            </div>
+
+            <div class="column is-6">
               <div class="content is-medium">
                 <p>
-                  A história da <strong>Conecta</strong> teve início a partir
-                  da experiência de um grupo de amigos que, durante o curso
-                  técnico em Tecnologia, começou a buscar oportunidades para
-                  ingressar no mercado de trabalho.
+                  A história da <strong>Conecta</strong> teve início a partir da
+                  experiência de um grupo de amigos que, durante o curso técnico
+                  em Tecnologia, começou a buscar oportunidades para ingressar
+                  no mercado de trabalho.
                 </p>
 
                 <p>
@@ -179,10 +219,8 @@
                   transformando-se gradualmente em uma plataforma digital.
                 </p>
               </div>
-            </div>
 
-            <div class="column is-5">
-              <div class="card conecta-quote">
+              <div class="card conecta-quote mt-5">
                 <div class="card-content">
                   <p class="title is-3 has-text-primary mb-5">“</p>
 
@@ -201,15 +239,27 @@
         </div>
       </section>
 
+      <!-- IDENTIDADE -->
       <section class="section">
         <div class="container">
-          <div class="columns is-variable is-8">
+          <div class="columns is-vcentered is-variable is-8">
             <div class="column is-5">
               <p class="has-text-primary has-text-weight-semibold mb-3">
                 NOSSA IDENTIDADE
               </p>
 
               <h2 class="title is-2">Por que Conecta?</h2>
+
+              <!-- elemento visual -->
+              <div class="conecta-identity-visual">
+                <div class="identity-circle circle-one">PESSOAS</div>
+                <div class="identity-circle circle-two">EMPRESAS</div>
+                <div class="identity-circle circle-three">TECNOLOGIA</div>
+
+                <div class="identity-center">
+                  <img src="assets/logo-full.jpg" alt="Logo Conecta" />
+                </div>
+              </div>
             </div>
 
             <div class="column is-7">
@@ -237,6 +287,7 @@
         </div>
       </section>
 
+      <!-- ESTATÍSTICAS -->
       <section class="section conecta-stats">
         <div class="container">
           <div class="columns mb-6">
@@ -251,8 +302,8 @@
 
               <p class="subtitle is-5 has-text-grey-light">
                 A internet passou a exercer um papel importante na procura por
-                emprego, no envio de currículos e na relação entre
-                profissionais e empresas.
+                emprego, no envio de currículos e na relação entre profissionais
+                e empresas.
               </p>
             </div>
           </div>
@@ -311,21 +362,25 @@
             <p class="has-text-primary has-text-weight-semibold mb-3">
               NOSSO PROPÓSITO
             </p>
-
-            <h2 class="title is-2">
-              Tornar conexões importantes mais simples
-            </h2>
-
+            <h2 class="title is-2">Tornar conexões importantes mais simples</h2>
             <p class="subtitle is-5 has-text-grey">
               Nossas soluções são desenvolvidas com base em três princípios.
             </p>
           </div>
 
           <div class="columns">
+            <!-- ACESSIBILIDADE -->
             <div class="column">
               <article class="card conecta-value-card">
+                <div class="value-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
+                    alt="Pessoas trabalhando em equipe"
+                  />
+                </div>
+
                 <div class="card-content">
-                  <span class="tag is-primary is-light mb-5">01</span>
+                  <span class="tag is-primary is-light mb-5"> 01 </span>
 
                   <h3 class="title is-4">Acessibilidade</h3>
 
@@ -337,10 +392,18 @@
               </article>
             </div>
 
+            <!-- ORGANIZAÇÃO -->
             <div class="column">
               <article class="card conecta-value-card">
+                <div class="value-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+                    alt="Ambiente organizado de trabalho"
+                  />
+                </div>
+
                 <div class="card-content">
-                  <span class="tag is-primary is-light mb-5">02</span>
+                  <span class="tag is-primary is-light mb-5"> 02 </span>
 
                   <h3 class="title is-4">Organização</h3>
 
@@ -352,10 +415,18 @@
               </article>
             </div>
 
+            <!-- TECNOLOGIA -->
             <div class="column">
               <article class="card conecta-value-card">
+                <div class="value-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                    alt="Tecnologia e desenvolvimento"
+                  />
+                </div>
+
                 <div class="card-content">
-                  <span class="tag is-primary is-light mb-5">03</span>
+                  <span class="tag is-primary is-light mb-5"> 03 </span>
 
                   <h3 class="title is-4">Tecnologia</h3>
 
@@ -370,6 +441,7 @@
         </div>
       </section>
 
+      <!-- PRODUTOS -->
       <section class="section has-background-light" id="solucoes">
         <div class="container">
           <div class="mb-6">
@@ -377,9 +449,7 @@
               PRODUTOS CONECTA
             </p>
 
-            <h2 class="title is-2">
-              Soluções criadas para problemas reais
-            </h2>
+            <h2 class="title is-2">Soluções criadas para problemas reais</h2>
 
             <p class="subtitle is-5 has-text-grey">
               Projetos desenvolvidos para estudantes, profissionais e
@@ -387,11 +457,12 @@
             </p>
           </div>
 
+          <!-- SALA ETEC -->
           <div class="card conecta-product mb-5">
             <div class="card-content">
               <div class="columns is-vcentered is-variable is-8">
                 <div class="column is-7">
-                  <span class="tag is-link is-light mb-4">Educação</span>
+                  <span class="tag is-link is-light mb-4"> Educação </span>
 
                   <h3 class="title is-3">Sala ETEC</h3>
 
@@ -409,22 +480,28 @@
                 </div>
 
                 <div class="column is-5">
-                  <div
-                    class="notification is-link is-light has-text-centered conecta-product-logo"
-                  >
-                    <p class="title is-4 mb-1">Sala</p>
-                    <p class="title is-1 has-text-link">ETEC</p>
+                  <div class="product-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1000&q=80"
+                      alt="Estudantes utilizando tecnologia"
+                    />
+
+                    <div class="product-image-title">
+                      <p>Sala</p>
+                      <strong>ETEC</strong>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- CONECTA EMPREGOS -->
           <div class="card conecta-product">
             <div class="card-content">
               <div class="columns is-vcentered is-variable is-8">
                 <div class="column is-7">
-                  <span class="tag is-primary is-light mb-4">Carreira</span>
+                  <span class="tag is-primary is-light mb-4"> Carreira </span>
 
                   <h3 class="title is-3">Conecta Empregos</h3>
 
@@ -443,10 +520,16 @@
                 </div>
 
                 <div class="column is-5">
-                  <div
-                    class="notification conecta-product-logo has-text-centered"
-                  >
-                    <p class="title is-2 has-text-primary">Conecta</p>
+                  <div class="product-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80"
+                      alt="Equipe trabalhando em oportunidades profissionais"
+                    />
+
+                    <div class="product-image-title">
+                      <strong>Conecta</strong>
+                      <span>Empregos</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -455,6 +538,7 @@
         </div>
       </section>
 
+      <!-- CTA -->
       <section class="section conecta-cta">
         <div class="container">
           <div class="columns is-vcentered">
@@ -478,25 +562,57 @@
       </section>
     </main>
 
-    <footer class="footer conecta-footer">
-      <div class="content has-text-centered">
-        <p class="title is-5 has-text-white mb-3">Conecta</p>
+    <!-- FOOTER -->
+    <footer class="section link-conecta">
+      <div class="container">
+        <ul>
+          <h3>Conecta</h3>
 
-        <p class="has-text-grey-light">
-          Tecnologia para aproximar pessoas, informações e oportunidades.
-        </p>
+          <p>
+            Uma empresa de tecnologia criada a partir da percepção de problemas
+            reais enfrentados por estudantes e profissionais em seu cotidiano.
+          </p>
 
-        <p class="is-size-7 has-text-grey">
-          © 2026 Conecta
-        </p>
+          <div class="redes-sociais">
+            <img src="assets/github.png" alt="GitHub" />
+            <img src="assets/instagram.png" alt="Instagram" />
+            <img src="assets/twitter.png" alt="Twitter" />
+          </div>
+        </ul>
+
+        <ul>
+          <h3>Links</h3>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Vagas</a></li>
+          <li><a href="#">Oportunidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+        </ul>
+
+        <ul>
+          <h3>Suporte</h3>
+
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Como Funciona</a></li>
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Contatos</a></li>
+          <li><a href="#">Comunicados</a></li>
+        </ul>
+
+        <ul>
+          <h3>Nos contate</h3>
+
+          <li>11 9999-9999</li>
+          <li>conectavagas@hotmail.com</li>
+          <li>Brasil</li>
+        </ul>
       </div>
     </footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const burgers = Array.from(
-          document.querySelectorAll(".navbar-burger"),
-        );
+        const burgers = Array.from(document.querySelectorAll(".navbar-burger"));
 
         burgers.forEach((burger) => {
           burger.addEventListener("click", () => {
