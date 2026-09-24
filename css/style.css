@@ -1,358 +1,289 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
+/* CORES */
+
 :root {
   --conecta-light-blue: #ebf7ff;
   --conecta-blue: #124582;
   --conecta-purple: #5829a7;
   --conecta-light-green: #adeec5;
-
   --conecta-white: #ffffff;
   --conecta-text: #273746;
   --conecta-muted: #667788;
   --conecta-border: #dce8f0;
 }
 
-/*
- * Tema
- */
+/*  CONFIGURAÇÕES GERAIS */
 
 html {
   scroll-behavior: smooth;
-
-  /* Evita que controles nativos adotem dark mode. */
-  color-scheme: light;
 }
 
-html,
 body {
-  background-color: var(--conecta-white);
   color: var(--conecta-text);
+  background: var(--conecta-white);
 }
-
-body {
-  min-height: 100vh;
-}
-
-/*
- * Logo
- */
-
-.conecta-logo {
-  width: 100px;
-  max-height: 6rem !important;
-}
-
-.navbar-brand .navbar-item {
-  padding-block: 1rem;
-}
-
-.navbar-brand .navbar-item {
-  padding-block: 0.75rem;
-}
-/*
- * Bulma overrides
- */
 
 .title {
   color: var(--conecta-blue);
 }
 
-.subtitle {
-  color: var(--conecta-muted);
-}
-
-.content {
-  color: var(--conecta-text);
-}
-
 .content p {
-  color: inherit;
+  color: var(--conecta-text);
 }
 
 .has-text-primary {
   color: var(--conecta-blue) !important;
 }
 
-.has-background-primary {
-  background-color: var(--conecta-blue) !important;
-}
-
-.has-background-light {
-  background-color: var(--conecta-light-blue) !important;
-}
-
-/*
- * Botões
- */
-
-.button.is-primary {
-  color: var(--conecta-white);
-  background-color: var(--conecta-blue);
-  border-color: transparent;
-}
-
-.button.is-primary:hover,
-.button.is-primary:focus {
-  color: var(--conecta-white);
-  background-color: #0e396d;
-}
-
-.button.is-primary.is-light {
-  color: var(--conecta-blue);
-  background-color: var(--conecta-light-blue);
-}
-
-.button.is-primary.is-light:hover,
-.button.is-primary.is-light:focus {
-  color: var(--conecta-white);
-  background-color: var(--conecta-blue);
-}
-
-/*
- * Tags
- */
-
-.tag.is-primary {
-  color: var(--conecta-white);
-  background-color: var(--conecta-blue);
-}
-
-.tag.is-primary.is-light {
-  color: var(--conecta-blue);
-  background-color: var(--conecta-light-blue);
-}
-
-/*
- * Roxo
- */
-
-.has-text-conecta-purple {
-  color: var(--conecta-purple) !important;
-}
-
-.has-background-conecta-purple {
-  background-color: var(--conecta-purple) !important;
-}
-
-.button.is-conecta-purple {
-  color: var(--conecta-white);
-  background-color: var(--conecta-purple);
-  border-color: transparent;
-}
-
-.button.is-conecta-purple:hover,
-.button.is-conecta-purple:focus {
-  color: var(--conecta-white);
-  background-color: #472087;
-}
-
-.tag.is-conecta-purple {
-  color: var(--conecta-purple);
-  background-color: #f0e9fb;
-}
-
-/*
- * Verde
- */
-
-.has-text-conecta-green {
-  color: #245c39 !important;
-}
-
-.has-background-conecta-green {
-  background-color: var(--conecta-light-green) !important;
-}
-
-.tag.is-conecta-green {
-  color: #245c39;
-  background-color: var(--conecta-light-green);
-}
-
-/*
- * Navbar
- */
+/* NAVBAR */
 
 .navbar {
-  background-color: var(--conecta-white);
+  background: var(--conecta-white);
   border-bottom: 1px solid var(--conecta-border);
 }
 
-.navbar-menu {
-  background-color: var(--conecta-white);
+.navbar-brand .navbar-item {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.conecta-logo {
+  width: 130px;
+  max-height: 7rem !important;
+  object-fit: contain;
 }
 
 .navbar-item {
-  color: var(--conecta-text);
+  color: var(--conecta-blue);
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
-.navbar-item:hover,
-.navbar-item:focus {
-  color: var(--conecta-blue) !important;
-  background-color: var(--conecta-light-blue) !important;
+.navbar-item:hover {
+  background: var(--conecta-light-blue) !important;
+  color: var(--conecta-purple) !important;
 }
-
-/*
- * Hero
- */
 
 .conecta-hero {
   background:
     radial-gradient(
-      circle at 88% 18%,
-      rgb(88 41 167 / 12%),
-      transparent 32%
+      circle at top right,
+      rgba(88, 41, 167, 0.12),
+      transparent 35%
     ),
-    linear-gradient(
-      135deg,
-      var(--conecta-white) 0%,
-      var(--conecta-light-blue) 100%
-    );
+    linear-gradient(135deg, var(--conecta-light-blue), var(--conecta-white));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .conecta-title {
-  max-width: 800px;
-
   color: var(--conecta-blue);
-
-  letter-spacing: -0.04em;
 }
 
 .conecta-hero .subtitle {
   color: var(--conecta-muted) !important;
 }
 
-/*
- * Missão
- */
+.conecta-hero .tag {
+  color: var(--conecta-blue);
+  background-color: var(--conecta-light-green);
+}
+
+/*  BOTÕES */
+
+.button.is-primary {
+  background-color: var(--conecta-blue);
+  border-color: var(--conecta-blue);
+}
+
+.button.is-primary:hover {
+  background-color: var(--conecta-purple);
+  border-color: var(--conecta-purple);
+}
+
+.button.is-light {
+  background-color: var(--conecta-light-blue);
+  color: var(--conecta-blue);
+}
+
+.button.is-light:hover {
+  background-color: var(--conecta-light-green);
+  color: var(--conecta-blue);
+}
+
+/* MISSÃO*/
 
 .conecta-mission {
-  padding: 2.5rem;
-
   background: linear-gradient(
-    145deg,
+    135deg,
     var(--conecta-blue),
     var(--conecta-purple)
   );
-
   border: none;
-  border-radius: 1.5rem;
-
-  box-shadow: 0 16px 40px rgb(18 69 130 / 15%);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(18, 69, 130, 0.18);
 }
 
 .conecta-mission .title {
-  color: var(--conecta-white) !important;
-  line-height: 1.35;
-}
-
-.conecta-mission p {
   color: var(--conecta-white);
 }
 
-.conecta-mission .has-text-grey-light {
-  color: var(--conecta-light-green) !important;
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* Texto em negrito */
-
-.content strong {
-  color: var(--conecta-blue);
-  font-weight: 700;
-}
-
-
-/*
- * Quem somos
- */
-
-.conecta-about {
-  background-color: var(--conecta-blue);
-}
-
-.conecta-about .title {
-  color: var(--conecta-white);
-}
-
-.conecta-about .content {
-  color: #e5eff7;
-}
-
-.conecta-about .content p {
-  color: #e5eff7;
-}
-
-.conecta-about .content strong {
-  color: var(--conecta-white);
-}
-
-.conecta-about .has-text-primary,
-.conecta-about .conecta-section-label {
-  color: var(--conecta-light-green) !important;
-}
-
-/* Texto em negrito sobre fundo azul */
-
-.conecta-about .content strong {
-  color: var(--conecta-white);
-}
-
-/*
- * Seções claras
- */
-
-.section.has-background-light {
+.has-background-light {
   background-color: var(--conecta-light-blue) !important;
 }
 
-.section.has-background-light .title {
-  color: var(--conecta-blue);
+/* IMAGEM QUEM SOMOS */
+
+.conecta-image-card {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--conecta-border);
+  background-color: var(--conecta-light-blue);
+  box-shadow: 0 12px 30px rgba(18, 69, 130, 0.12);
 }
 
-.section.has-background-light .content {
-  color: var(--conecta-text);
+.conecta-image-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.section.has-background-light .content p {
-  color: var(--conecta-text);
+.conecta-image-card:hover img {
+  transform: scale(1.04);
 }
 
-/*
- * História
- */
+.conecta-image-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(18, 69, 130, 0.78), transparent);
+}
+
+.image-label {
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  z-index: 2;
+  color: var(--conecta-white);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* HISTÓRIA */
+
+.conecta-history-image {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--conecta-border);
+  background-color: var(--conecta-white);
+  box-shadow: 0 12px 30px rgba(18, 69, 130, 0.1);
+}
+
+.conecta-history-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 .conecta-quote {
-  height: 100%;
-
-  background-color: var(--conecta-white);
-
+  border-radius: 18px;
   border: 1px solid var(--conecta-border);
-  border-radius: 1.25rem;
-
-  box-shadow: 0 6px 24px rgb(18 69 130 / 8%);
+  box-shadow: 0 8px 25px rgba(18, 69, 130, 0.08);
+  background-color: var(--conecta-white);
 }
 
-.conecta-quote .card-content {
-  background-color: transparent;
-}
-
-.conecta-quote .title,
 .conecta-quote blockquote {
   color: var(--conecta-blue);
 }
 
-.conecta-quote p {
-  color: var(--conecta-muted);
+/*  IDENTIDADE  */
+
+.conecta-identity-visual {
+  min-height: 260px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--conecta-light-blue);
+  border: 1px solid var(--conecta-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/*
- * Estatísticas
- */
+.identity-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--conecta-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(18, 69, 130, 0.1);
+}
+
+.identity-circle.blue {
+  border: 3px solid var(--conecta-blue);
+  color: var(--conecta-blue);
+}
+
+.identity-circle.purple {
+  border: 3px solid var(--conecta-purple);
+  color: var(--conecta-purple);
+}
+
+.identity-circle.green {
+  border: 3px solid var(--conecta-light-green);
+  color: var(--conecta-blue);
+}
+
+.identity-center {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--conecta-white);
+  border: 3px solid var(--conecta-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(18, 69, 130, 0.12);
+}
+
+.identity-center img {
+  width: 85px;
+  height: auto;
+  object-fit: contain;
+}
+
+
 
 .conecta-stats {
   background: linear-gradient(
     135deg,
-    #0e355f,
-    var(--conecta-blue)
+    var(--conecta-blue),
+    var(--conecta-purple)
   );
 }
 
@@ -361,141 +292,117 @@ body {
 }
 
 .conecta-stats .subtitle {
-  color: #dce9f3;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .conecta-stat-card {
   height: 100%;
-
-  background-color: rgb(255 255 255 / 8%);
-
-  border: 1px solid rgb(255 255 255 / 14%);
-
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
   box-shadow: none;
-
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
 }
 
-.conecta-stat-card .title {
-  color: var(--conecta-light-green) !important;
+.conecta-stat-card p:last-child {
+  color: rgba(255, 255, 255, 0.78) !important;
 }
 
-.conecta-stat-card p {
-  color: #dce9f3 !important;
-}
-
-/*
- * Propósito
- */
+/*CARDS*/
 
 .conecta-value-card {
   height: 100%;
-
-  background-color: var(--conecta-white);
-
+  overflow: hidden;
+  border-radius: 18px;
   border: 1px solid var(--conecta-border);
-  border-radius: 1rem;
-
-  box-shadow: 0 4px 18px rgb(18 69 130 / 6%);
-
+  background-color: var(--conecta-white);
+  box-shadow: 0 8px 25px rgba(18, 69, 130, 0.07);
   transition:
-    transform 160ms ease,
-    box-shadow 160ms ease,
-    border-color 160ms ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .conecta-value-card:hover {
-  transform: translateY(-4px);
-
-  border-color: rgb(18 69 130 / 30%);
-
-  box-shadow: 0 12px 28px rgb(18 69 130 / 10%);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(18, 69, 130, 0.13);
 }
 
-.conecta-value-card .title {
-  color: var(--conecta-blue);
+.value-image {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
 }
 
-.conecta-value-card p {
-  color: var(--conecta-text);
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-/*
- * Produtos
- */
+.conecta-value-card:hover .value-image img {
+  transform: scale(1.05);
+}
+
+/* PRODUTOS */
 
 .conecta-product {
+  border-radius: 18px;
   overflow: hidden;
-
-  background-color: var(--conecta-white);
-
   border: 1px solid var(--conecta-border);
-  border-radius: 1.5rem;
-
-  box-shadow: 0 4px 20px rgb(18 69 130 / 7%);
+  background-color: var(--conecta-white);
+  box-shadow: 0 8px 25px rgba(18, 69, 130, 0.07);
 }
 
 .conecta-product .card-content {
-  background-color: transparent;
+  padding: 2rem;
 }
 
-.conecta-product .title {
-  color: var(--conecta-blue);
+.conecta-product-image {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-right: 1.5rem;
 }
 
-.conecta-product .content,
-.conecta-product .content p {
-  color: var(--conecta-text);
+.conecta-product-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.conecta-product-logo {
-  min-height: 220px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(
-    135deg,
-    var(--conecta-light-blue),
-    #f1ebff
-  ) !important;
-
-  border-radius: 1.25rem;
+.conecta-product-image:hover img {
+  transform: scale(1.05);
 }
 
-/*
- * Sala ETEC
- */
-
-.conecta-product-logo .has-text-link {
-  color: var(--conecta-purple) !important;
+.conecta-product-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 69, 130, 0.72), transparent 60%);
 }
 
-/*
- * Destaques
- */
-
-.conecta-highlight {
-  color: var(--conecta-purple);
+.product-image-text {
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  z-index: 2;
+  color: var(--conecta-white);
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-.conecta-highlight-box {
-  background-color: var(--conecta-light-green);
-
-  border-radius: 1rem;
-}
-
-/*
- * CTA
- */
 
 .conecta-cta {
   background: linear-gradient(
-    120deg,
-    var(--conecta-blue),
-    var(--conecta-purple)
+    135deg,
+    var(--conecta-purple),
+    var(--conecta-blue)
   );
 }
 
@@ -503,114 +410,154 @@ body {
   color: var(--conecta-white);
 }
 
-.conecta-cta .button.is-white {
+.conecta-cta .button {
   color: var(--conecta-blue);
-  background-color: var(--conecta-white);
+  font-weight: 700;
 }
 
-.conecta-cta .button.is-white:hover,
-.conecta-cta .button.is-white:focus {
-  color: var(--conecta-purple);
-  background-color: var(--conecta-light-blue);
-}
+/* FOOTER */
 
-/*
- * Footer
- */
-
-.conecta-footer {
-  background-color: #0b2848;
-}
-
-.conecta-footer .title {
+.link-conecta {
+  background: linear-gradient(135deg, #0e355f, var(--conecta-blue));
   color: var(--conecta-white);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
-.conecta-footer p {
-  color: #c9d9e6;
+.link-conecta .container {
+  display: grid;
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 3rem;
 }
 
-/*
- * Links
- */
-
-a:not(.button):not(.navbar-item) {
-  transition: color 150ms ease;
+.link-conecta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-a:not(.button):not(.navbar-item):hover {
-  color: var(--conecta-purple);
+.link-conecta h3 {
+  color: var(--conecta-white);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-/*
- * Responsividade
- */
+.link-conecta p,
+.link-conecta li {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
 
-@media screen and (max-width: 768px) {
+.link-conecta li {
+  margin-bottom: 0.5rem;
+}
+
+.link-conecta a {
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.2s ease;
+}
+
+.link-conecta a:hover {
+  color: var(--conecta-light-green);
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.redes-sociais img {
+  width: 35px;
+  height: 35px;
+
+  object-fit: contain;
+
+  transition: transform 0.2s ease;
+}
+
+.redes-sociais img:hover {
+  transform: translateY(-3px);
+}
+
+/*RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .conecta-logo {
+    width: 115px;
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .conecta-hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .conecta-mission {
-    padding: 1.75rem;
+    margin-top: 1rem;
   }
 
-  .conecta-product-logo {
-    min-height: 160px;
+  .conecta-image-card {
+    height: 250px;
   }
 
-  .conecta-title {
-    font-size: 2.5rem !important;
+  .conecta-history-image {
+    height: 260px;
+  }
+
+  .conecta-identity-visual {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .identity-circle {
+    width: 80px;
+    height: 80px;
+
+    font-size: 0.85rem;
+  }
+
+  .identity-center {
+    width: 95px;
+    height: 95px;
+  }
+
+  .identity-center img {
+    width: 70px;
+  }
+
+  .value-image {
+    height: 160px;
+  }
+
+  .conecta-product-image {
+    height: 220px;
+
+    margin: 0 1rem 1rem;
+  }
+
+  .link-conecta .container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
   }
 }
-/* footer dos links*/
 
-footer{
-background: linear-gradient(135deg, #0e355f, var(--conecta-blue));
-}
-footer .container{
-    display: flex;
-    color: white;
+@media (max-width: 480px) {
+  .link-conecta .container {
+    grid-template-columns: 1fr;
+  }
 
-    text-align: center;
-   
-}
-
-footer .container ul{
-    width: 100%;
-    
- 
-}
-
-footer .container h3{
-    margin-bottom: 16px;
-    color: #ffffff;
-    
-    
-}
-
-footer .container .redes-sociais img{
-    margin-right: 5px;
-}
-
-footer .container ul>p{
-    margin-bottom: 40px;
-    color: lightgray;
-    
-}
-
-footer .container li{
-    margin: 10px 0;
-    list-style: none;
-    
-}
-
-footer .container a{
-    color: white;
-    text-decoration: none;
- 
-}
-footer a:hover{
-    color: #22d3ee;
-
-}
-
-footer i{
-    color: #ebebeb;
+  .conecta-identity-visual {
+    flex-direction: column;
+  }
 }
