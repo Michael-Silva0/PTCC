@@ -7,6 +7,7 @@
   --conecta-blue: #124582;
   --conecta-purple: #5829a7;
   --conecta-light-green: #adeec5;
+  --conecta-dark-green: darkgreen;
   --conecta-white: #ffffff;
   --conecta-text: #273746;
   --conecta-muted: #667788;
@@ -17,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  colo
 }
 
 body {
@@ -95,7 +97,10 @@ body {
 .button.is-primary {
   background-color: var(--conecta-blue);
   border-color: var(--conecta-blue);
+  color: var(--conecta-white);
+  border: 2px solid var(--conecta-blue);
 }
+
 
 .button.is-primary:hover {
   background-color: var(--conecta-purple);
@@ -105,11 +110,13 @@ body {
 .button.is-light {
   background-color: var(--conecta-light-blue);
   color: var(--conecta-blue);
+  border: 2px solid var(--conecta-blue);
 }
 
 .button.is-light:hover {
   background-color: var(--conecta-light-green);
   color: var(--conecta-blue);
+  border: 2px solid var(--conecta-dark-green);
 }
 
 /* MISSÃO*/
@@ -231,8 +238,8 @@ body {
 }
 
 .identity-circle {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: var(--conecta-white);
   display: flex;
@@ -260,8 +267,8 @@ body {
 }
 
 .identity-center {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: var(--conecta-white);
   border: 3px solid var(--conecta-blue);
